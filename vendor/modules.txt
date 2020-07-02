@@ -1,0 +1,179 @@
+# github.com/aws/aws-sdk-go v1.33.0
+## explicit
+github.com/aws/aws-sdk-go/aws
+github.com/aws/aws-sdk-go/aws/arn
+github.com/aws/aws-sdk-go/aws/awserr
+github.com/aws/aws-sdk-go/aws/awsutil
+github.com/aws/aws-sdk-go/aws/client
+github.com/aws/aws-sdk-go/aws/client/metadata
+github.com/aws/aws-sdk-go/aws/corehandlers
+github.com/aws/aws-sdk-go/aws/credentials
+github.com/aws/aws-sdk-go/aws/credentials/ec2rolecreds
+github.com/aws/aws-sdk-go/aws/credentials/endpointcreds
+github.com/aws/aws-sdk-go/aws/credentials/processcreds
+github.com/aws/aws-sdk-go/aws/credentials/stscreds
+github.com/aws/aws-sdk-go/aws/csm
+github.com/aws/aws-sdk-go/aws/defaults
+github.com/aws/aws-sdk-go/aws/ec2metadata
+github.com/aws/aws-sdk-go/aws/endpoints
+github.com/aws/aws-sdk-go/aws/request
+github.com/aws/aws-sdk-go/aws/session
+github.com/aws/aws-sdk-go/aws/signer/v4
+github.com/aws/aws-sdk-go/internal/context
+github.com/aws/aws-sdk-go/internal/ini
+github.com/aws/aws-sdk-go/internal/s3err
+github.com/aws/aws-sdk-go/internal/sdkio
+github.com/aws/aws-sdk-go/internal/sdkmath
+github.com/aws/aws-sdk-go/internal/sdkrand
+github.com/aws/aws-sdk-go/internal/sdkuri
+github.com/aws/aws-sdk-go/internal/shareddefaults
+github.com/aws/aws-sdk-go/internal/strings
+github.com/aws/aws-sdk-go/internal/sync/singleflight
+github.com/aws/aws-sdk-go/private/checksum
+github.com/aws/aws-sdk-go/private/protocol
+github.com/aws/aws-sdk-go/private/protocol/eventstream
+github.com/aws/aws-sdk-go/private/protocol/eventstream/eventstreamapi
+github.com/aws/aws-sdk-go/private/protocol/json/jsonutil
+github.com/aws/aws-sdk-go/private/protocol/query
+github.com/aws/aws-sdk-go/private/protocol/query/queryutil
+github.com/aws/aws-sdk-go/private/protocol/rest
+github.com/aws/aws-sdk-go/private/protocol/restxml
+github.com/aws/aws-sdk-go/private/protocol/xml/xmlutil
+github.com/aws/aws-sdk-go/service/s3
+github.com/aws/aws-sdk-go/service/s3/internal/arn
+github.com/aws/aws-sdk-go/service/sts
+github.com/aws/aws-sdk-go/service/sts/stsiface
+# github.com/badoux/checkmail v0.0.0-20200623144435-f9f80cb795fa
+## explicit
+github.com/badoux/checkmail
+# github.com/dgrijalva/jwt-go v3.2.0+incompatible
+## explicit
+github.com/dgrijalva/jwt-go
+# github.com/gin-contrib/sse v0.1.0
+github.com/gin-contrib/sse
+# github.com/gin-gonic/gin v1.6.3
+## explicit
+github.com/gin-gonic/gin
+github.com/gin-gonic/gin/binding
+github.com/gin-gonic/gin/internal/bytesconv
+github.com/gin-gonic/gin/internal/json
+github.com/gin-gonic/gin/render
+# github.com/go-ini/ini v1.57.0
+## explicit
+github.com/go-ini/ini
+# github.com/go-playground/locales v0.13.0
+github.com/go-playground/locales
+github.com/go-playground/locales/currency
+# github.com/go-playground/universal-translator v0.17.0
+github.com/go-playground/universal-translator
+# github.com/go-playground/validator/v10 v10.2.0
+github.com/go-playground/validator/v10
+# github.com/go-redis/redis v6.15.8+incompatible
+## explicit
+github.com/go-redis/redis
+github.com/go-redis/redis/internal
+github.com/go-redis/redis/internal/consistenthash
+github.com/go-redis/redis/internal/hashtag
+github.com/go-redis/redis/internal/pool
+github.com/go-redis/redis/internal/proto
+github.com/go-redis/redis/internal/util
+# github.com/go-redis/redis/v7 v7.4.0
+## explicit
+github.com/go-redis/redis/v7
+github.com/go-redis/redis/v7/internal
+github.com/go-redis/redis/v7/internal/consistenthash
+github.com/go-redis/redis/v7/internal/hashtag
+github.com/go-redis/redis/v7/internal/pool
+github.com/go-redis/redis/v7/internal/proto
+github.com/go-redis/redis/v7/internal/util
+# github.com/golang/protobuf v1.3.3
+github.com/golang/protobuf/proto
+# github.com/jinzhu/gorm v1.9.14
+## explicit
+github.com/jinzhu/gorm
+github.com/jinzhu/gorm/dialects/postgres
+# github.com/jinzhu/inflection v1.0.0
+github.com/jinzhu/inflection
+# github.com/jmespath/go-jmespath v0.3.0
+github.com/jmespath/go-jmespath
+# github.com/joho/godotenv v1.3.0
+## explicit
+github.com/joho/godotenv
+# github.com/json-iterator/go v1.1.9
+github.com/json-iterator/go
+# github.com/jtguibas/cinema v0.0.0-20200208054232-ca271f28a020
+## explicit
+github.com/jtguibas/cinema
+# github.com/klauspost/cpuid v1.2.3
+github.com/klauspost/cpuid
+# github.com/leodido/go-urn v1.2.0
+github.com/leodido/go-urn
+# github.com/lib/pq v1.1.1
+github.com/lib/pq
+github.com/lib/pq/hstore
+github.com/lib/pq/oid
+github.com/lib/pq/scram
+# github.com/mattn/go-isatty v0.0.12
+github.com/mattn/go-isatty
+# github.com/minio/md5-simd v1.1.0
+github.com/minio/md5-simd
+# github.com/minio/minio-go v6.0.14+incompatible
+## explicit
+github.com/minio/minio-go
+github.com/minio/minio-go/pkg/credentials
+github.com/minio/minio-go/pkg/encrypt
+github.com/minio/minio-go/pkg/s3signer
+github.com/minio/minio-go/pkg/s3utils
+github.com/minio/minio-go/pkg/set
+# github.com/minio/minio-go/v6 v6.0.57
+github.com/minio/minio-go/v6
+github.com/minio/minio-go/v6/pkg/credentials
+github.com/minio/minio-go/v6/pkg/encrypt
+github.com/minio/minio-go/v6/pkg/s3utils
+github.com/minio/minio-go/v6/pkg/set
+github.com/minio/minio-go/v6/pkg/signer
+github.com/minio/minio-go/v6/pkg/tags
+# github.com/minio/sha256-simd v0.1.1
+github.com/minio/sha256-simd
+# github.com/mitchellh/go-homedir v1.1.0
+github.com/mitchellh/go-homedir
+# github.com/modern-go/concurrent v0.0.0-20180228061459-e0a39a4cb421
+github.com/modern-go/concurrent
+# github.com/modern-go/reflect2 v0.0.0-20180701023420-4b7aa43c6742
+github.com/modern-go/reflect2
+# github.com/twinj/uuid v1.0.0
+## explicit
+github.com/twinj/uuid
+# github.com/ugorji/go/codec v1.1.7
+github.com/ugorji/go/codec
+# github.com/uwaifo/video_server_api v0.0.0-20200627080630-9451ebd51361
+## explicit
+github.com/uwaifo/video_server_api/application
+github.com/uwaifo/video_server_api/domian/entity
+github.com/uwaifo/video_server_api/domian/repository
+github.com/uwaifo/video_server_api/infrastructure/auth
+github.com/uwaifo/video_server_api/infrastructure/security
+github.com/uwaifo/video_server_api/interfaces
+github.com/uwaifo/video_server_api/interfaces/fileupload
+# golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9
+## explicit
+golang.org/x/crypto/argon2
+golang.org/x/crypto/bcrypt
+golang.org/x/crypto/blake2b
+golang.org/x/crypto/blowfish
+# golang.org/x/net v0.0.0-20200324143707-d3edc9973b7e
+golang.org/x/net/http/httpguts
+golang.org/x/net/idna
+golang.org/x/net/publicsuffix
+# golang.org/x/sys v0.0.0-20200323222414-85ca7c5b95cd
+golang.org/x/sys/cpu
+golang.org/x/sys/unix
+# golang.org/x/text v0.3.2
+golang.org/x/text/secure/bidirule
+golang.org/x/text/transform
+golang.org/x/text/unicode/bidi
+golang.org/x/text/unicode/norm
+# gopkg.in/ini.v1 v1.42.0
+gopkg.in/ini.v1
+# gopkg.in/yaml.v2 v2.2.8
+gopkg.in/yaml.v2
