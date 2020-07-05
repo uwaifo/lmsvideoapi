@@ -8,7 +8,7 @@ import (
 	"github.com/uwaifo/lmsvideoapi/interfaces/middleware"
 	"github.com/uwaifo/lmsvideoapi/interfaces/upload"
 	"github.com/uwaifo/lmsvideoapi/routes"
- 	"log"
+	"log"
 	"os"
 )
 
@@ -53,14 +53,16 @@ func main() {
 
 	users := routes.NewUsers(services.User, redisService.Auth, tk)
 	videos := routes.NewVideo(services.Video, services.User, fu, redisService.Auth, tk)
+	//snippet := routes.NewSnippet(services)
 	authenticate := routes.NewAuthenticate(services.User, redisService.Auth, tk)
 
 	r := gin.Default()
- 	r.Use(middleware.CORSMiddleware()) //For CORS
 
+	//Set max file upload size to 100 Mib
+	r.MaxMultipartMemory = 100 << 20
+	r.Use(middleware.CORSMiddleware()) //For CORS
 
 	v1 := r.Group("/api/v1")
-
 
 	{
 		// User Routes
@@ -69,11 +71,14 @@ func main() {
 		v1.GET("/users/:user_id", users.GetUser)
 
 		// Videoo Routes
-		v1.POST("/video", middleware.AuthMiddleware(),middleware.MaxSizeAllowed(8192000),videos.SaveVideo )
+		v1.POST("/video", middleware.AuthMiddleware(), middleware.MaxSizeAllowed(8192000), videos.SaveVideo)
 		v1.PUT("/video/:video_id", middleware.AuthMiddleware(), middleware.MaxSizeAllowed(8192000), videos.UpdateVideo)
 		v1.GET("/video/:video_id", videos.GetVideoAndCreator)
 		v1.DELETE("/video/:video_id", middleware.AuthMiddleware(), videos.DeleteVideo)
 		v1.GET("/video", videos.GetAllVideo)
+
+		//Video Segments
+		v1.POST("/snippet", routes.SaveSnippet)
 
 		// Authentication routes
 		v1.POST("/login", authenticate.Login)
@@ -81,7 +86,6 @@ func main() {
 		v1.POST("/refresh", authenticate.Refresh)
 
 	}
-
 
 	appPort := os.Getenv("PORT")
 	if appPort == "" {
