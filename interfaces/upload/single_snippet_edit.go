@@ -31,12 +31,12 @@ func SingleSnippetEdit(filename, snippetStart, snippetEnd string) (string, error
 	video.SetStart(start)                      // trim first second of the video
 	video.SetEnd(end)                          // keep only up to 9 seconds
 	//video.CommandLine()
-	video.SetSize(400, 300)            // resize video to 400x300
-	video.Crop(0, 0, 200, 200)         // crop rectangle top-left (0,0) with size 200x200
-	video.SetSize(400, 400)            // resize cropped 200x200 video to a 400x400
-	video.SetFPS(48)                   // set the output framerate to 48 frames per second
-	video.SetBitrate(200_000)          // set the output bitrate of 200 kbps
-	video.Render("edited_" + filename) // note format conversion by file extension
+	video.SetSize(400, 300)                // resize video to 400x300
+	video.Crop(0, 0, 200, 200)             // crop rectangle top-left (0,0) with size 200x200
+	video.SetSize(400, 400)                // resize cropped 200x200 video to a 400x400
+	video.SetFPS(48)                       // set the output framerate to 48 frames per second
+	video.SetBitrate(200_000)              // set the output bitrate of 200 kbps
+	_ = video.Render("edited_" + filename) // note format conversion by file extension
 
 	//video.CommandLine()
 	// you can also generate the command line instead of applying it directly
