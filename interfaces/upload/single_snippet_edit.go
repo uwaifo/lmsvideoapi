@@ -2,6 +2,7 @@ package fileupload
 
 import (
 	"fmt"
+	"os"
 	"time"
 
 	"github.com/jtguibas/cinema"
@@ -11,7 +12,17 @@ import (
 
 func SingleSnippetEdit(filename, snippetStart, snippetEnd string) (string, error) {
 	//Test Cinema begin
-	video, err := cinema.Load("temp_upload/" + filename)
+	// HEROKU_DIRECTORY
+
+	tempUpload := "temp_upload/"
+	if tempUpload == "" {
+		tempUpload = os.Getenv("HEROKU_DIRECTORY")
+
+	}
+
+	//video, err := cinema.Load("temp_upload/" + filename)
+	video, err := cinema.Load(tempUpload + filename)
+
 	check(err)
 
 	fmt.Println(snippetStart + ":" + snippetEnd)

@@ -30,11 +30,13 @@ func main() {
 
 	// Latter add some redis stuff
 	//redis details
+	//redis://h:p933aa7a328ef19d91da349d6443a5e3dd1dea814802e661b796325771e2169e6@ec2-34-204-117-137.compute-1.amazonaws.com:27129
 	redisHost := os.Getenv("REDIS_HOST")
 	redisPort := os.Getenv("REDIS_PORT")
 	redisPassword := os.Getenv("REDIS_PASSWORD")
 
 	services, err := persistence.NewRepositories(dbDriver, user, password, port, host, dbname)
+	//postgres://nvjuszfxcnmuye:3d836cb2cc5a14103b5addf9048e4a3a21e2ab0e313664a955fc4228b81a2837@ec2-107-22-7-9.compute-1.amazonaws.com:5432/dblgr2metnehkn
 	if err != nil {
 		panic(err)
 	}
